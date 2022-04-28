@@ -49,7 +49,7 @@ module.exports = function (options) {
   function newPoint(x, y) {
     return {
       x,
-      y,
+      y
     };
   }
 
@@ -59,7 +59,7 @@ module.exports = function (options) {
       point.y >= bounds.y &&
       point.x <= bounds.x + bounds.width &&
       point.y <= bounds.y + bounds.height
-    )
+    );
   }
 
   function ensureWindowVisibleOnSomeDisplay() {
@@ -87,7 +87,7 @@ module.exports = function (options) {
         break;
       }
     }
-        
+
     if (currentPointCount < validPointCount) {
       // Window is partially or fully not visible now.
       // Reset it to safe defaults.
